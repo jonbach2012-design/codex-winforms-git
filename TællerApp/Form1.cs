@@ -3,6 +3,8 @@ namespace TællerApp;
 public partial class Form1 : Form
 {
     private int tæller = 0;
+    private const int MinVærdi = -10;
+    private const int MaxVærdi = 10;
 
     public Form1()
     {
@@ -12,16 +14,12 @@ public partial class Form1 : Form
 
     private void btnPlus_Click(object sender, EventArgs e)
     {
-        tæller++;
-        OpdaterTællerLabel();
-        TilføjLog("+1");
+        ForsøgÆndring(1, "+1");
     }
 
     private void btnMinus_Click(object sender, EventArgs e)
     {
-        tæller--;
-        OpdaterTællerLabel();
-        TilføjLog("-1");
+        ForsøgÆndring(-1, "-1");
     }
 
     private void btnNulstil_Click(object sender, EventArgs e)
@@ -29,6 +27,27 @@ public partial class Form1 : Form
         tæller = 0;
         OpdaterTællerLabel();
         TilføjLog("Nulstil");
+    }
+
+    private void ForsøgÆndring(int ændring, string handling)
+    {
+        int nyVærdi = tæller + ændring;
+
+        if (nyVærdi < MinVærdi || nyVærdi > MaxVærdi)
+        {
+            MessageBox.Show(
+                $"Tælleren må kun være mellem {MinVærdi} og {MaxVærdi}.",
+                "Grænse nået",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+
+            TilføjLog($"Forsøg udenfor grænse: {handling}");
+            return;
+        }
+
+        tæller = nyVærdi;
+        OpdaterTællerLabel();
+        TilføjLog(handling);
     }
 
     private void OpdaterTællerLabel()
