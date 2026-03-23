@@ -5,15 +5,11 @@ public partial class Form1 : Form
     private int tæller = 0;
     private const int MinVærdi = -10;
     private const int MaxVærdi = 10;
-    private readonly System.Windows.Forms.Timer autoTimer = new();
 
     public Form1()
     {
         InitializeComponent();
         OpdaterTællerLabel();
-
-        autoTimer.Interval = 10;
-        autoTimer.Tick += autoTimer_Tick;
     }
 
     private void btnPlus_Click(object sender, EventArgs e)
@@ -31,17 +27,6 @@ public partial class Form1 : Form
         tæller = 0;
         OpdaterTællerLabel();
         TilføjLog("Nulstil");
-    }
-
-    private void chkAutoPlus_CheckedChanged(object sender, EventArgs e)
-    {
-        autoTimer.Enabled = chkAutoPlus.Checked;
-        TilføjLog(chkAutoPlus.Checked ? "Auto +1 slået til" : "Auto +1 slået fra");
-    }
-
-    private void autoTimer_Tick(object? sender, EventArgs e)
-    {
-        ForsøgÆndring(1, "Auto +1 tick");
     }
 
     private void ForsøgÆndring(int ændring, string handling)
