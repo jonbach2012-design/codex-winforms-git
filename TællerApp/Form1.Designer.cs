@@ -11,6 +11,7 @@ partial class Form1
     private Button btnPlus;
     private Button btnMinus;
     private Button btnNulstil;
+    private CheckBox chkAutoPlus;
     private ListBox lstLog;
 
     /// <summary>
@@ -38,6 +39,7 @@ partial class Form1
         btnPlus = new Button();
         btnMinus = new Button();
         btnNulstil = new Button();
+        chkAutoPlus = new CheckBox();
         lstLog = new ListBox();
         SuspendLayout();
         // 
@@ -81,14 +83,25 @@ partial class Form1
         btnNulstil.UseVisualStyleBackColor = true;
         btnNulstil.Click += btnNulstil_Click;
         // 
+        // chkAutoPlus
+        // 
+        chkAutoPlus.AutoSize = true;
+        chkAutoPlus.Location = new Point(335, 170);
+        chkAutoPlus.Name = "chkAutoPlus";
+        chkAutoPlus.Size = new Size(92, 29);
+        chkAutoPlus.TabIndex = 4;
+        chkAutoPlus.Text = "Auto +1";
+        chkAutoPlus.UseVisualStyleBackColor = true;
+        chkAutoPlus.CheckedChanged += chkAutoPlus_CheckedChanged;
+        // 
         // lstLog
         // 
         lstLog.FormattingEnabled = true;
         lstLog.ItemHeight = 25;
-        lstLog.Location = new Point(170, 190);
+        lstLog.Location = new Point(170, 210);
         lstLog.Name = "lstLog";
-        lstLog.Size = new Size(460, 179);
-        lstLog.TabIndex = 4;
+        lstLog.Size = new Size(460, 154);
+        lstLog.TabIndex = 5;
         // 
         // Form1
         // 
@@ -96,6 +109,7 @@ partial class Form1
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(800, 450);
         Controls.Add(lstLog);
+        Controls.Add(chkAutoPlus);
         Controls.Add(btnNulstil);
         Controls.Add(btnMinus);
         Controls.Add(btnPlus);
@@ -104,6 +118,7 @@ partial class Form1
         StartPosition = FormStartPosition.CenterScreen;
         Text = "TællerApp";
         ResumeLayout(false);
+        PerformLayout();
     }
 
     #endregion
