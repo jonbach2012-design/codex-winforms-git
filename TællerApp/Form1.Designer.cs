@@ -7,6 +7,12 @@ partial class Form1
     /// </summary>
     private System.ComponentModel.IContainer components = null;
 
+    private Label lblTæller;
+    private Button btnPlus;
+    private Button btnMinus;
+    private Button btnNulstil;
+    private ListBox lstLog;
+
     /// <summary>
     ///  Clean up any resources being used.
     /// </summary>
@@ -28,10 +34,76 @@ partial class Form1
     /// </summary>
     private void InitializeComponent()
     {
-        components = new System.ComponentModel.Container();
+        lblTæller = new Label();
+        btnPlus = new Button();
+        btnMinus = new Button();
+        btnNulstil = new Button();
+        lstLog = new ListBox();
+        SuspendLayout();
+        // 
+        // lblTæller
+        // 
+        lblTæller.Font = new Font("Segoe UI", 28F, FontStyle.Bold, GraphicsUnit.Point);
+        lblTæller.Location = new Point(250, 30);
+        lblTæller.Name = "lblTæller";
+        lblTæller.Size = new Size(300, 70);
+        lblTæller.TabIndex = 0;
+        lblTæller.Text = "0";
+        lblTæller.TextAlign = ContentAlignment.MiddleCenter;
+        // 
+        // btnPlus
+        // 
+        btnPlus.Location = new Point(170, 120);
+        btnPlus.Name = "btnPlus";
+        btnPlus.Size = new Size(130, 45);
+        btnPlus.TabIndex = 1;
+        btnPlus.Text = "+1";
+        btnPlus.UseVisualStyleBackColor = true;
+        btnPlus.Click += btnPlus_Click;
+        // 
+        // btnMinus
+        // 
+        btnMinus.Location = new Point(335, 120);
+        btnMinus.Name = "btnMinus";
+        btnMinus.Size = new Size(130, 45);
+        btnMinus.TabIndex = 2;
+        btnMinus.Text = "-1";
+        btnMinus.UseVisualStyleBackColor = true;
+        btnMinus.Click += btnMinus_Click;
+        // 
+        // btnNulstil
+        // 
+        btnNulstil.Location = new Point(500, 120);
+        btnNulstil.Name = "btnNulstil";
+        btnNulstil.Size = new Size(130, 45);
+        btnNulstil.TabIndex = 3;
+        btnNulstil.Text = "Nulstil";
+        btnNulstil.UseVisualStyleBackColor = true;
+        btnNulstil.Click += btnNulstil_Click;
+        // 
+        // lstLog
+        // 
+        lstLog.FormattingEnabled = true;
+        lstLog.ItemHeight = 25;
+        lstLog.Location = new Point(170, 190);
+        lstLog.Name = "lstLog";
+        lstLog.Size = new Size(460, 179);
+        lstLog.TabIndex = 4;
+        // 
+        // Form1
+        // 
+        AutoScaleDimensions = new SizeF(10F, 25F);
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(800, 450);
-        Text = "Form1";
+        Controls.Add(lstLog);
+        Controls.Add(btnNulstil);
+        Controls.Add(btnMinus);
+        Controls.Add(btnPlus);
+        Controls.Add(lblTæller);
+        Name = "Form1";
+        StartPosition = FormStartPosition.CenterScreen;
+        Text = "TællerApp";
+        ResumeLayout(false);
     }
 
     #endregion
