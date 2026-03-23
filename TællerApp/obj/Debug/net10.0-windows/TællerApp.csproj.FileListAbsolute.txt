@@ -1,0 +1,14 @@
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\bin\Debug\net10.0-windows\TællerApp.exe
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\bin\Debug\net10.0-windows\TællerApp.deps.json
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\bin\Debug\net10.0-windows\TællerApp.runtimeconfig.json
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\bin\Debug\net10.0-windows\TællerApp.dll
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\bin\Debug\net10.0-windows\TællerApp.pdb
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\obj\Debug\net10.0-windows\TællerApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\obj\Debug\net10.0-windows\TællerApp.AssemblyInfoInputs.cache
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\obj\Debug\net10.0-windows\TællerApp.AssemblyInfo.cs
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\obj\Debug\net10.0-windows\TællerApp.csproj.CoreCompileInputs.cache
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\obj\Debug\net10.0-windows\TællerApp.dll
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\obj\Debug\net10.0-windows\refint\TællerApp.dll
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\obj\Debug\net10.0-windows\TællerApp.pdb
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\obj\Debug\net10.0-windows\TællerApp.genruntimeconfig.cache
+C:\Users\JONBAC01\OneDrive - Scandi Standard AB\SmartLearning\Programmering\supportsag\TællerApp\obj\Debug\net10.0-windows\ref\TællerApp.dll
